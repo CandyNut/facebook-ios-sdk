@@ -295,7 +295,7 @@ tokenCachingStrategy:(FBSessionTokenCachingStrategy*)tokenCachingStrategy
                                 userQuery, @"users",
                                 nil];
 
-    SBJSON *writer = [[SBJSON alloc] init];
+    SBJsonWriter *writer = [[SBJsonWriter alloc] init];
     NSString *jsonMultiquery = [writer stringWithObject:multiquery];
     [writer release];
 
